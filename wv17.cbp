@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="wv17"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/markus/Documents/workspace/planner"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/markus/Documents/workspace/planner/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/markus/Documents/workspace/planner/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/markus/Documents/workspace/planner/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/markus/Documents/workspace/planner/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/markus/Documents/workspace/planner"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/markus/Documents/workspace/planner/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/markus/Documents/workspace/planner/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/markus/Documents/workspace/planner/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/markus/Documents/workspace/planner/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/markus/Documents/workspace/planner"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/markus/Documents/workspace/planner/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/markus/Documents/workspace/planner/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/markus/Documents/workspace/planner/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/markus/Documents/workspace/planner/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="csp_test">
+				<Option output="/home/markus/Documents/workspace/planner/csp_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/markus/Documents/workspace/planner"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/markus/Documents/workspace/planner/include/VAL"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/markus/Documents/workspace/planner/Makefile&quot;  VERBOSE=1 csp_test"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/markus/Documents/workspace/planner/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/markus/Documents/workspace/planner/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/markus/Documents/workspace/planner/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="csp_test/fast">
+				<Option output="/home/markus/Documents/workspace/planner/csp_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/markus/Documents/workspace/planner"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/markus/Documents/workspace/planner/include/VAL"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/markus/Documents/workspace/planner/Makefile&quot;  VERBOSE=1 csp_test/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/markus/Documents/workspace/planner/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/markus/Documents/workspace/planner/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/markus/Documents/workspace/planner/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="parser_test">
+				<Option output="/home/markus/Documents/workspace/planner/parser_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/markus/Documents/workspace/planner"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/markus/Documents/workspace/planner/include/VAL"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/markus/Documents/workspace/planner/Makefile&quot;  VERBOSE=1 parser_test"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/markus/Documents/workspace/planner/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/markus/Documents/workspace/planner/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/markus/Documents/workspace/planner/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="parser_test/fast">
+				<Option output="/home/markus/Documents/workspace/planner/parser_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/markus/Documents/workspace/planner"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/markus/Documents/workspace/planner/include/VAL"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/markus/Documents/workspace/planner/Makefile&quot;  VERBOSE=1 parser_test/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/markus/Documents/workspace/planner/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/markus/Documents/workspace/planner/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/markus/Documents/workspace/planner/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="parser">
+				<Option output="/home/markus/Documents/workspace/planner/libparser.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/markus/Documents/workspace/planner"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/markus/Documents/workspace/planner/include/VAL"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/markus/Documents/workspace/planner/Makefile&quot;  VERBOSE=1 parser"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/markus/Documents/workspace/planner/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/markus/Documents/workspace/planner/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/markus/Documents/workspace/planner/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="parser/fast">
+				<Option output="/home/markus/Documents/workspace/planner/libparser.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/markus/Documents/workspace/planner"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/markus/Documents/workspace/planner/include/VAL"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/markus/Documents/workspace/planner/Makefile&quot;  VERBOSE=1 parser/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/markus/Documents/workspace/planner/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/markus/Documents/workspace/planner/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/markus/Documents/workspace/planner/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/markus/Documents/workspace/planner/src/VAL/Action.cpp">
+			<Option target="parser"/>
+		</Unit>
+		<Unit filename="/home/markus/Documents/workspace/planner/src/VAL/DebugWriteController.cpp">
+			<Option target="parser"/>
+		</Unit>
+		<Unit filename="/home/markus/Documents/workspace/planner/src/VAL/Environment.cpp">
+			<Option target="parser"/>
+		</Unit>
+		<Unit filename="/home/markus/Documents/workspace/planner/src/VAL/Events.cpp">
+			<Option target="parser"/>
+		</Unit>
+		<Unit filename="/home/markus/Documents/workspace/planner/src/VAL/FastEnvironment.cpp">
+			<Option target="parser"/>
+		</Unit>
+		<Unit filename="/home/markus/Documents/workspace/planner/src/VAL/FuncAnalysis.cpp">
+			<Option target="parser"/>
+		</Unit>
+		<Unit filename="/home/markus/Documents/workspace/planner/src/VAL/FuncExp.cpp">
+			<Option target="parser"/>
+		</Unit>
+		<Unit filename="/home/markus/Documents/workspace/planner/src/VAL/LaTeXSupport.cpp">
+			<Option target="parser"/>
+		</Unit>
+		<Unit filename="/home/markus/Documents/workspace/planner/src/VAL/Ownership.cpp">
+			<Option target="parser"/>
+		</Unit>
+		<Unit filename="/home/markus/Documents/workspace/planner/src/VAL/Plan.cpp">
+			<Option target="parser"/>
+		</Unit>
+		<Unit filename="/home/markus/Documents/workspace/planner/src/VAL/Polynomial.cpp">
+			<Option target="parser"/>
+		</Unit>
+		<Unit filename="/home/markus/Documents/workspace/planner/src/VAL/PrettyPrinter.cpp">
+			<Option target="parser"/>
+		</Unit>
+		<Unit filename="/home/markus/Documents/workspace/planner/src/VAL/Proposition.cpp">
+			<Option target="parser"/>
+		</Unit>
+		<Unit filename="/home/markus/Documents/workspace/planner/src/VAL/RepairAdvice.cpp">
+			<Option target="parser"/>
+		</Unit>
+		<Unit filename="/home/markus/Documents/workspace/planner/src/VAL/RobustAnalyse.cpp">
+			<Option target="parser"/>
+		</Unit>
+		<Unit filename="/home/markus/Documents/workspace/planner/src/VAL/SASActions.cpp">
+			<Option target="parser"/>
+		</Unit>
+		<Unit filename="/home/markus/Documents/workspace/planner/src/VAL/SimpleEval.cpp">
+			<Option target="parser"/>
+		</Unit>
+		<Unit filename="/home/markus/Documents/workspace/planner/src/VAL/State.cpp">
+			<Option target="parser"/>
+		</Unit>
+		<Unit filename="/home/markus/Documents/workspace/planner/src/VAL/TIM.cpp">
+			<Option target="parser"/>
+		</Unit>
+		<Unit filename="/home/markus/Documents/workspace/planner/src/VAL/TimSupport.cpp">
+			<Option target="parser"/>
+		</Unit>
+		<Unit filename="/home/markus/Documents/workspace/planner/src/VAL/ToFunction.cpp">
+			<Option target="parser"/>
+		</Unit>
+		<Unit filename="/home/markus/Documents/workspace/planner/src/VAL/TrajectoryConstraints.cpp">
+			<Option target="parser"/>
+		</Unit>
+		<Unit filename="/home/markus/Documents/workspace/planner/src/VAL/TypedAnalyser.cpp">
+			<Option target="parser"/>
+		</Unit>
+		<Unit filename="/home/markus/Documents/workspace/planner/src/VAL/Utils.cpp">
+			<Option target="parser"/>
+		</Unit>
+		<Unit filename="/home/markus/Documents/workspace/planner/src/VAL/Validator.cpp">
+			<Option target="parser"/>
+		</Unit>
+		<Unit filename="/home/markus/Documents/workspace/planner/src/VAL/instantiation.cpp">
+			<Option target="parser"/>
+		</Unit>
+		<Unit filename="/home/markus/Documents/workspace/planner/src/VAL/pddl+.cpp">
+			<Option target="parser"/>
+		</Unit>
+		<Unit filename="/home/markus/Documents/workspace/planner/src/VAL/ptree.cpp">
+			<Option target="parser"/>
+		</Unit>
+		<Unit filename="/home/markus/Documents/workspace/planner/src/VAL/random.cpp">
+			<Option target="parser"/>
+		</Unit>
+		<Unit filename="/home/markus/Documents/workspace/planner/src/VAL/typecheck.cpp">
+			<Option target="parser"/>
+		</Unit>
+		<Unit filename="/home/markus/Documents/workspace/planner/src/csp_test.cpp">
+			<Option target="csp_test"/>
+		</Unit>
+		<Unit filename="/home/markus/Documents/workspace/planner/src/parser_test.cpp">
+			<Option target="parser_test"/>
+		</Unit>
+		<Unit filename="/home/markus/Documents/workspace/planner/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
