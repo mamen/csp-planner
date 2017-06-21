@@ -7,7 +7,7 @@
 
    (:goal 
         (and 
-            (city)
+            (at_city)
         )
    )
 )

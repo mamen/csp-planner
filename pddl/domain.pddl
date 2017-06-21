@@ -1,44 +1,27 @@
-﻿(define (domain escape)
-   (:requirements :strips)
-   (:predicates (infirmary_code)
-                (controllroom_code)
+﻿ine (domain escape)
+    (:requirements :strips)
+    (:predicates (infirmary_code)
+                (controlroom_code)
                 (knife)
                 (exit_locked)
                 (key)
                 (axe)
                 (motor)
-                (city)
-                (find_infirmarycode)
-                (find_knife)
-                (find_key)
-                (find_axe)
-                (open_box)
-                (open_cuppord)
-                (unlock_exit)
                 (at_bunker)
                 (at_infirmary)
                 (at_corridor)
                 (at_armory)
-                (at_controllroom)
+                (at_controlroom)
                 (at_street)
                 (at_woods)
                 (at_lake)
                 (at_cabin)
-                (at_celler)
-                (leave_bunker)
-                (goto_corridor)
-                (goto_armory)
-                (goto_controllroom)
-                (goto_street)
-                (goto_bunker)
-                (goto_woods)
-                (goto_lake)
-                (goto_cabin)
-                (goto_celler)
-                (goto_city)
+                (at_cellar)
+                (at_city)
     )
     
     (:action find_infirmarycode
+        :parameters ()
         :precondition (and
             (at_infirmary)
             (not (infirmary_code))
@@ -49,23 +32,25 @@
     )
     
     (:action goto_corridor
+        :parameters ()
         :precondition (or
             (and
                 (at_infirmary)
                 (infirmary_code)
             )
             (at_armory)
-            (at_controllroom)
+            (at_controlroom)
         )
         :effect(and
             (at_corridor)
             (not (at_infirmary))
             (not (at_armory))
-            (not (at_controllroom))
+            (not (at_controlroom))
         )
     )
     
     (:action goto_armory
+        :parameters ()
         :precondition (and
             (at_corridor)
         )
@@ -76,6 +61,7 @@
     )
     
     (:action find_knife
+        :parameters ()
         :precondition (and 
             (at_armory)
         )
@@ -85,31 +71,34 @@
     )
     
     (:action open_cuppord
+        :parameters ()
         :precondition(and
             (at_armory)
             (knife)
         )
         :effect(and
-            (controllroom_code)
+            (controlroom_code)
             (not (knife))
         )
     )
     
-    (:action goto_controllroom
+    (:action goto_controlroom
+        :parameters ()
         :precondition(and
             (at_corridor)
-            (controllroom_code)
+            (controlroom_code)
         )
         :effect (and
-            (at_controllroom)
+            (at_controlroom)
             (not (at_corridor))
         )
     )
     
     (:action unlock_exit
+        :parameters ()
         :precondition(and
             (exit_locked)
-            (at_controllroom)
+            (at_controlroom)
         )
         :effect(and
             (not (exit_locked))
@@ -117,7 +106,8 @@
     )
     
     (:action leave_bunker
-        :precondition(and 
+        :parameters ()
+        :precondition(and
             (at_corridor)
             (not (exit_locked))
         )
@@ -128,6 +118,7 @@
     )
     
     (:action goto_street
+        :parameters ()
         :precondition (and
             (at_bunker)
         )
@@ -138,7 +129,8 @@
     )
     
     (:action goto_bunker
-        :precondition(or 
+        :parameters ()
+        :precondition(or
             (at_street)
             (at_woods)
         )
@@ -150,23 +142,25 @@
     )
     
     (:action goto_woods
+        :parameters ()
         :precondition(or
             (at_bunker)
             (at_cabin)
-            (at_celler)
+            (at_cellar)
             (at_lake)
         )
         :effect(and
             (at_woods)
             (not (at_bunker))
             (not (at_cabin))
-            (not (at_celler))
+            (not (at_cellar))
             (not (at_lake))
         )
     )
     
     (:action goto_cabin
-        :precondition(and 
+        :parameters ()
+        :precondition(and
             (at_woods)
         )
         :effect(and
@@ -175,18 +169,20 @@
         )
     )
     
-    (:action goto_celler
+    (:action goto_cellar
+        :parameters ()
         :precondition(and
             (at_woods)
             (key)
         )
         :effect(and
-            (at_celler)
+            (at_cellar)
             (not (at_woods))
         )
     )
     
     (:action goto_lake
+        :parameters ()
         :precondition(and
             (at_woods)
         )
@@ -197,6 +193,7 @@
     )
     
     (:action find_key
+        :parameters ()
         :precondition(and
             (at_cabin)
         )
@@ -206,8 +203,9 @@
     )
     
     (:action find_axe
+        :parameters ()
         :precondition(and
-            (at_celler)
+            (at_cellar)
         )
         :effect(and
             (axe)
@@ -215,9 +213,10 @@
     )
     
     (:action open_box
+        :parameters ()
         :precondition(and
             (axe)
-            (at_celler)
+            (at_cellar)
         )
         :effect(and
             (motor)
@@ -225,12 +224,13 @@
     )
     
     (:action goto_city
+        :parameters ()
         :precondition(and
             (at_lake)
             (motor)
         )
         :effect(and
-            (city)
+            (at_city)
             (not (motor))
             (not (at_lake))
         )
