@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/clion/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/arne/Downloads/clion-2017.1.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /opt/clion/bin/cmake/bin/cmake -E remove -f
+RM = /home/arne/Downloads/clion-2017.1.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/markus/Documents/workspace/planner
+CMAKE_SOURCE_DIR = /home/arne/CLionProjects/planner
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/markus/Documents/workspace/planner
+CMAKE_BINARY_DIR = /home/arne/CLionProjects/planner
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/markus/Documents/workspace/planner
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/opt/clion/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/arne/Downloads/clion-2017.1.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/opt/clion/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/arne/Downloads/clion-2017.1.3/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/markus/Documents/workspace/planner/CMakeFiles /home/markus/Documents/workspace/planner/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/arne/CLionProjects/planner/CMakeFiles /home/arne/CLionProjects/planner/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/markus/Documents/workspace/planner/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/arne/CLionProjects/planner/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -135,6 +135,19 @@ parser_test: cmake_check_build_system
 parser_test/fast:
 	$(MAKE) -f CMakeFiles/parser_test.dir/build.make CMakeFiles/parser_test.dir/build
 .PHONY : parser_test/fast
+
+#=============================================================================
+# Target rules for targets named solver
+
+# Build rule for target.
+solver: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 solver
+.PHONY : solver
+
+# fast build rule for target.
+solver/fast:
+	$(MAKE) -f CMakeFiles/solver.dir/build.make CMakeFiles/solver.dir/build
+.PHONY : solver/fast
 
 #=============================================================================
 # Target rules for targets named parser
@@ -1013,6 +1026,33 @@ src/parser_test.cpp.s:
 	$(MAKE) -f CMakeFiles/parser_test.dir/build.make CMakeFiles/parser_test.dir/src/parser_test.cpp.s
 .PHONY : src/parser_test.cpp.s
 
+src/solver.o: src/solver.cpp.o
+
+.PHONY : src/solver.o
+
+# target to build an object file
+src/solver.cpp.o:
+	$(MAKE) -f CMakeFiles/solver.dir/build.make CMakeFiles/solver.dir/src/solver.cpp.o
+.PHONY : src/solver.cpp.o
+
+src/solver.i: src/solver.cpp.i
+
+.PHONY : src/solver.i
+
+# target to preprocess a source file
+src/solver.cpp.i:
+	$(MAKE) -f CMakeFiles/solver.dir/build.make CMakeFiles/solver.dir/src/solver.cpp.i
+.PHONY : src/solver.cpp.i
+
+src/solver.s: src/solver.cpp.s
+
+.PHONY : src/solver.s
+
+# target to generate assembly for a file
+src/solver.cpp.s:
+	$(MAKE) -f CMakeFiles/solver.dir/build.make CMakeFiles/solver.dir/src/solver.cpp.s
+.PHONY : src/solver.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1023,6 +1063,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... csp_test"
 	@echo "... parser_test"
+	@echo "... solver"
 	@echo "... parser"
 	@echo "... src/VAL/Action.o"
 	@echo "... src/VAL/Action.i"
@@ -1120,6 +1161,9 @@ help:
 	@echo "... src/parser_test.o"
 	@echo "... src/parser_test.i"
 	@echo "... src/parser_test.s"
+	@echo "... src/solver.o"
+	@echo "... src/solver.i"
+	@echo "... src/solver.s"
 .PHONY : help
 
 

@@ -43,4 +43,8 @@ target_link_libraries (parser_test LINK_PUBLIC parser)
 
 add_executable (csp_test src/csp_test.cpp)
 
+add_executable(solver src/solver.cpp)
+
+target_link_libraries (solver LINK_PUBLIC parser)
+
 target_link_libraries (csp_test LINK_PUBLIC gecodeint gecodekernel gecodesupport gecodesearch gecodedriver gecodeminimodel)

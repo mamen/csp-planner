@@ -1,4 +1,4 @@
-﻿ine (domain escape)
+﻿(define (domain escape)
     (:requirements :strips)
     (:predicates (infirmary_code)
                 (controlroom_code)
