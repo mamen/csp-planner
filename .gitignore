@@ -83,3 +83,11 @@ fabric.properties
 
 CMakeCache.txt
 CMakeFiles/
+/wv17.cbp
+/solver
+/Makefile
+/cmake_install.cmake
+/libourParser.a
+/CMakeCache.txt
+/parser_test
+/libparser.a

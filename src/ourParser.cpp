@@ -22,7 +22,7 @@ VAL::domain* OurParser::parseDomain(char* arg) {
         VAL::yfl->switch_streams(&domainFile, &std::cout);
         yyparse();
         domain = VAL::current_analysis->the_domain;
-        std::cout << "Domain parsed: " << domain->name << std::endl;
+        //std::cout << "Domain parsed: " << domain->name << std::endl;
         delete VAL::yfl;
     }
     domainFile.close();
@@ -45,7 +45,7 @@ VAL::problem* OurParser::parseProblem(char* arg) {
         VAL::yfl->switch_streams(&problemFile, &std::cout);
         yyparse();
         problem = VAL::current_analysis->the_problem;
-        std::cout << "problem parsed: " << problem->name << std::endl;
+        //std::cout << "problem parsed: " << problem->name << std::endl;
         delete VAL::yfl;
     }
     problemFile.close();
