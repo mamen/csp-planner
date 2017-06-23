@@ -27,16 +27,6 @@
 					<DistClean command="/usr/bin/make -f &quot;/home/arne/CLionProjects/planner/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/home/arne/CLionProjects/planner"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/arne/CLionProjects/planner/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/arne/CLionProjects/planner/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/arne/CLionProjects/planner/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/arne/CLionProjects/planner/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="csp_test">
 				<Option output="/home/arne/CLionProjects/planner/csp_test" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/arne/CLionProjects/planner"/>
@@ -96,6 +86,48 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -f &quot;/home/arne/CLionProjects/planner/Makefile&quot;  VERBOSE=1 parser_test/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/arne/CLionProjects/planner/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/arne/CLionProjects/planner/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/arne/CLionProjects/planner/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/arne/CLionProjects/planner"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/arne/CLionProjects/planner/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/arne/CLionProjects/planner/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/arne/CLionProjects/planner/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/arne/CLionProjects/planner/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ourParser">
+				<Option output="/home/arne/CLionProjects/planner/libourParser.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/arne/CLionProjects/planner"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/arne/CLionProjects/planner/include/VAL"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/arne/CLionProjects/planner/Makefile&quot;  VERBOSE=1 ourParser"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/arne/CLionProjects/planner/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/arne/CLionProjects/planner/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/arne/CLionProjects/planner/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ourParser/fast">
+				<Option output="/home/arne/CLionProjects/planner/libourParser.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/arne/CLionProjects/planner"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/arne/CLionProjects/planner/include/VAL"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/arne/CLionProjects/planner/Makefile&quot;  VERBOSE=1 ourParser/fast"/>
 					<CompileFile command="/usr/bin/make -f &quot;/home/arne/CLionProjects/planner/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -f &quot;/home/arne/CLionProjects/planner/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -f &quot;/home/arne/CLionProjects/planner/Makefile&quot;  VERBOSE=1 clean"/>
@@ -258,6 +290,12 @@
 		</Unit>
 		<Unit filename="/home/arne/CLionProjects/planner/src/csp_test.cpp">
 			<Option target="csp_test"/>
+		</Unit>
+		<Unit filename="/home/arne/CLionProjects/planner/src/ourParser.cpp">
+			<Option target="ourParser"/>
+		</Unit>
+		<Unit filename="/home/arne/CLionProjects/planner/src/ourParser.h">
+			<Option target="ourParser"/>
 		</Unit>
 		<Unit filename="/home/arne/CLionProjects/planner/src/parser_test.cpp">
 			<Option target="parser_test"/>

@@ -137,6 +137,19 @@ parser_test/fast:
 .PHONY : parser_test/fast
 
 #=============================================================================
+# Target rules for targets named ourParser
+
+# Build rule for target.
+ourParser: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ourParser
+.PHONY : ourParser
+
+# fast build rule for target.
+ourParser/fast:
+	$(MAKE) -f CMakeFiles/ourParser.dir/build.make CMakeFiles/ourParser.dir/build
+.PHONY : ourParser/fast
+
+#=============================================================================
 # Target rules for targets named solver
 
 # Build rule for target.
@@ -999,6 +1012,33 @@ src/csp_test.cpp.s:
 	$(MAKE) -f CMakeFiles/csp_test.dir/build.make CMakeFiles/csp_test.dir/src/csp_test.cpp.s
 .PHONY : src/csp_test.cpp.s
 
+src/ourParser.o: src/ourParser.cpp.o
+
+.PHONY : src/ourParser.o
+
+# target to build an object file
+src/ourParser.cpp.o:
+	$(MAKE) -f CMakeFiles/ourParser.dir/build.make CMakeFiles/ourParser.dir/src/ourParser.cpp.o
+.PHONY : src/ourParser.cpp.o
+
+src/ourParser.i: src/ourParser.cpp.i
+
+.PHONY : src/ourParser.i
+
+# target to preprocess a source file
+src/ourParser.cpp.i:
+	$(MAKE) -f CMakeFiles/ourParser.dir/build.make CMakeFiles/ourParser.dir/src/ourParser.cpp.i
+.PHONY : src/ourParser.cpp.i
+
+src/ourParser.s: src/ourParser.cpp.s
+
+.PHONY : src/ourParser.s
+
+# target to generate assembly for a file
+src/ourParser.cpp.s:
+	$(MAKE) -f CMakeFiles/ourParser.dir/build.make CMakeFiles/ourParser.dir/src/ourParser.cpp.s
+.PHONY : src/ourParser.cpp.s
+
 src/parser_test.o: src/parser_test.cpp.o
 
 .PHONY : src/parser_test.o
@@ -1060,9 +1100,10 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
 	@echo "... csp_test"
 	@echo "... parser_test"
+	@echo "... edit_cache"
+	@echo "... ourParser"
 	@echo "... solver"
 	@echo "... parser"
 	@echo "... src/VAL/Action.o"
@@ -1158,6 +1199,9 @@ help:
 	@echo "... src/csp_test.o"
 	@echo "... src/csp_test.i"
 	@echo "... src/csp_test.s"
+	@echo "... src/ourParser.o"
+	@echo "... src/ourParser.i"
+	@echo "... src/ourParser.s"
 	@echo "... src/parser_test.o"
 	@echo "... src/parser_test.i"
 	@echo "... src/parser_test.s"

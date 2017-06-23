@@ -37,6 +37,8 @@ include_directories(include/VAL)
 
 add_library (parser ${VAL_SOURCES})
 
+add_library(ourParser src/ourParser.cpp)
+
 add_executable (parser_test src/parser_test.cpp)
 
 target_link_libraries (parser_test LINK_PUBLIC parser)
@@ -45,6 +47,6 @@ add_executable (csp_test src/csp_test.cpp)
 
 add_executable(solver src/solver.cpp)
 
-target_link_libraries (solver LINK_PUBLIC parser)
+target_link_libraries (solver LINK_PUBLIC ourParser parser)
 
 target_link_libraries (csp_test LINK_PUBLIC gecodeint gecodekernel gecodesupport gecodesearch gecodedriver gecodeminimodel)
