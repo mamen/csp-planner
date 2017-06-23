@@ -1,6 +1,3 @@
-//
-// Created by arne on 22.06.17.
-//
 #include "ourParser.h"
 
 namespace VAL {

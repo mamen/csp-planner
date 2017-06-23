@@ -3,6 +3,9 @@
 #include <gecode/search.hh>
 
 
+#include "ourParser.h"
+
+
 class csp_test: public Gecode::IntMinimizeSpace
 {
     public:
@@ -67,6 +70,13 @@ class csp_test: public Gecode::IntMinimizeSpace
 
 int main(int argc, char ** argv)
 {
+
+    string domainPath = "pddl/dinner_date_domain.pddl";
+
+    OurParser parser;
+
+    parser.parseDomain(domainPath*);
+
 
     csp_test ct;
 

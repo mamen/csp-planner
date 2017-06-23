@@ -1,7 +1,3 @@
-//
-// Created by arne on 22.06.17.
-//
-
 #include "ptree.h"
 #include "FlexLexer.h"
 #include <iostream>

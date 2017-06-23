@@ -1,3 +1,5 @@
+set (CMAKE_CXX_STANDARD 11)
+
 cmake_minimum_required (VERSION 2.8.11)
 project (wv17)
 
@@ -47,6 +49,6 @@ add_executable (csp_test src/csp_test.cpp)
 
 add_executable(solver src/solver.cpp)
 
-target_link_libraries (solver LINK_PUBLIC ourParser parser)
+target_link_libraries (solver LINK_PUBLIC gecodeint gecodekernel gecodesupport gecodesearch gecodedriver gecodeminimodel ourParser parser)
 
 target_link_libraries (csp_test LINK_PUBLIC gecodeint gecodekernel gecodesupport gecodesearch gecodedriver gecodeminimodel)
