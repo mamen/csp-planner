@@ -11,8 +11,6 @@
    )
 
    (:goal 
-       (and 
         (hasbanana)
-       )
        )
 )

@@ -3,12 +3,9 @@
 #include <gecode/search.hh>
 
 
-#include "ourParser.h"
-
-
 class csp_test: public Gecode::IntMinimizeSpace
 {
-    public:
+public:
 
     csp_test()
     {
